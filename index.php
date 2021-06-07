@@ -1,28 +1,21 @@
 <?php
 
+ob_start();
 try {
     $page = isset($_GET['page']) ? $_GET['page'] : 'post.home';
 
     if ($page === 'post.home') {
-        ob_start();
-        require 'home.php';
-        $content = ob_get_clean();
+        require 'view/post/home.php';
     } elseif ($page === 'post.show') {
-        ob_start();
-        require 'show.php';
-        $content = ob_get_clean();
+        require 'view/post/show.php';
     } elseif ($page === 'user.connect') {
-        ob_start();
-        require 'connectionForm.php';
-        $content = ob_get_clean();
+        require 'view/user/connectionForm.php';
     } else {
         throw new Exception('404');
     }
 } catch (Exception $e) {
-    ob_start();
-    require 'error' . $e->getMessage().'.php';
-    $content = ob_get_clean();    
+    require 'view/error/error' . $e->getMessage() . '.php';
 }
+$content = ob_get_clean();
 
-
-require 'base.php';
+require 'view/base.php';
