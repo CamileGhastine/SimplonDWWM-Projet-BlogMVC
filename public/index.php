@@ -8,6 +8,8 @@ try {
 
     if ($page === 'post.home') {
         require $path . '/model/postRepository.php';
+        $posts = findAll();
+
         require $path . '/view/post/home.php';
     } elseif ($page === 'post.show') {
         require $path . '/view/post/show.php';
