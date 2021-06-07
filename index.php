@@ -10,6 +10,10 @@ if ($page === 'post.home') {
     ob_start();
     require 'show.php';
     $content = ob_get_clean();
+} elseif($page === 'user.connect') {
+    ob_start();
+    require 'connectionForm.php';
+    $content = ob_get_clean();
 }
 
 
