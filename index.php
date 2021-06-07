@@ -1,10 +1,12 @@
 <?php
 
-if ($_GET['page'] === 'post.home') {
+$page = isset($_GET['page']) ? $_GET['page'] : 'post.home';
+
+if ($page === 'post.home') {
     ob_start();
     require 'home.php';
     $content = ob_get_clean();
-} elseif ($_GET['page'] === 'post.show') {
+} elseif ($page === 'post.show') {
     ob_start();
     require 'show.php';
     $content = ob_get_clean();
