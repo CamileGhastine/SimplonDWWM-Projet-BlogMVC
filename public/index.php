@@ -7,6 +7,7 @@ try {
     $page = isset($_GET['page']) ? $_GET['page'] : 'post.home';
 
     if ($page === 'post.home') {
+        require $path . '/model/postRepository.php';
         require $path . '/view/post/home.php';
     } elseif ($page === 'post.show') {
         require $path . '/view/post/show.php';
