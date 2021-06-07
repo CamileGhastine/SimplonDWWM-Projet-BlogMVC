@@ -6,6 +6,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Titre</h4>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit eveniet quisquam praesentium ex commodi aliquid consectetur aliquam, amet non neque delectus enim error nostrum culpa placeat et quidem fuga?</p>
+                <p><a href="?page=post.show">Voir plus ...</a></p>
                 </div>
             </div>
         </div>
