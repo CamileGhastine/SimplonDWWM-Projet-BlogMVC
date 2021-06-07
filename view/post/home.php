@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <h4 class="card-title"><?= $post['title'] ?></h4>
                     <p class="card-text"><?= $post['content'] . ' ...' ?></p>
-                    <p><a href="?page=post.show">Voir plus ...</a></p>
+                    <p><a href="?page=post.show&id=<?= $post['id'] ?>">Voir plus ...</a></p>
                 </div>
             </div>
         </div>

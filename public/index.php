@@ -12,6 +12,9 @@ try {
 
         require $path . '/view/post/home.php';
     } elseif ($page === 'post.show') {
+        require $path . '/model/postRepository.php';
+        $post = findOneById($_GET['id']);
+
         require $path . '/view/post/show.php';
     } elseif ($page === 'user.connect') {
         require $path . '/view/user/connectionForm.php';
