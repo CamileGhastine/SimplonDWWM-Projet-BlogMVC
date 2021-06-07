@@ -11,7 +11,7 @@
 
     <?php require '_nav.php'; ?>
     <div class="container">
-        affichage dépendant de l'ordre du contrôleur !
+        <?= $content ?>
     </div>
 </body>
 </html>
