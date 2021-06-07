@@ -20,8 +20,8 @@ Ci-dessous l'architecture de dossier souhaitée:
 		- 📁error
 			- 📄error404.php
 		- 📁post
-			- 📄home.php
-			- 📄 post.php
+			- 📄 home.php
+			- 📄 show.php
 		- 📁shared
 			- 📄 _nav.php
 		- 📁user
